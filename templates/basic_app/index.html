@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+{% load static %}
+
+  {% block body_block %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3c35f8069e.js" crossorigin="anonymous"></script>
+	<header>
+
+
+	<main>
+  <section class="left-sec">
+   <h2> We Are Here For Your Care</h2>
+   <h1>  We The Best Doctors</h1>
+   <p>DocMed is a healthcare application that makes online medical services seamless, accurate, fast and reliable. </p>
+   <hr>
+   <p> </p>
+   <button class="button button3">
+     LEARN MORE
+   </button>
+  </section>
+
+  <section class="right-sec">
+   <figure>
+    <img src="{% static "images/nice.png/" %}" id="img">
+   </figure>
+  </section>
+ </main>
+ </header>
+
+ <!-- something nice -->
+ <section class="header-extradiv" id="something">
+ 	<div class="container">
+ 		<h2 class="text-center font-weight-bold" id="h">WHAT DO WE OFFER</h2>
+ 		<div class="row">
+ 			<div class=" extra-div col-lg-4 col-md-4 col-12">
+ 				<a href="#"><i class="fas fa-stethoscope fa-3x" aria-hidden="true"></i></a>
+ 				<h2>Diagnosis</h2>
+ 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+ 			</div>
+ 			<div class=" extra-div col-lg-4 col-md-4 col-12">
+ 				<a href="#"><i class="fas fa-pills fa-3x"></i></a>
+ 				<h2>Medication</h2>
+ 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+ 			</div>
+ 			<div class=" extra-div col-lg-4 col-md-4 col-12">
+ 				<a href="#"><i class="fas fa-briefcase-medical fa-3x"></i></a>
+ 				<h2>Emergency services</h2>
+ 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+ 			</div>
+ 		</div>
+ 	</div>
+  
+  <section style="background-color:#D3D3D3" id="aboutus">
+  <div class="container" style="display:flex;" >
+    <img src="{% static 'images/about.png/' %}" id="news" align="right">
+    <div class="container" style="padding-top: 40px">
+    <h1>About us</h1>
+    <br><br>
+    <p>DocMed is a healthcare application that makes online medical services seamless, accurate, fast and reliable. DocMed aims at creating an ecosystem which makes healthcare accessible to everyone. Using intelligent technology our application can provide cutting-edge healthcare systems.</p>
+     <button class="button button3">
+     LEARN MORE
+   </button>
+    </div>
+  </div>
+</section>
+
+<section id="contactus">
+  <div class="container" style="display:flex;" >
+    <img src="{% static 'images/Contact-us.png/' %}" id="news" align="right">
+    <div class="container" style="padding-top: 40px">
+    <h1>Contact us</h1>
+    <form>
+     <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="mb-3">
+  <button type="submit" class="btn btn-danger">Submit</button>
+</div>
+   </form>
+    </div>
+  </div>
+</section>
+ 
+
+</section>
+
+
+ </header>
+
+
+
+ 
+{% include "basic_app/footer.html" %}
+  {% endblock %}
+  
+
+
+
+
+
+
+
+
+
